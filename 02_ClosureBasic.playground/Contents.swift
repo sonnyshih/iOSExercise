@@ -114,6 +114,33 @@ print(multplyClosure(15, 26))
 /* ##### Exp 4 End ##### */
 
 
+/* ##### 直接執行 closure 回傳值存在變數中 start ##### */
+//func ssayHello()->String {
+//    return "Hello"
+//}
+
+// Closure 寫法, 然後closure回傳值存到變數中，再印出變數
+/*
+let helloClosure = {
+    ()->String in
+    return "Hello1234"
+}
+
+let greeting = helloClosure()
+print(greeting)
+*/
+
+// closure執行完後，直接存到變數中
+let greeting:String = {
+    ()->String in
+    return "Hello1234"
+} ()
+
+print(greeting)
+
+
+/* ##### 直接執行 closure 回傳值存在變數中 end ##### */
+
 /* ##### 把 Closure當成參數使用 Start ##### */
 let twoNumsAdd:(Int, Int)->String = {
     (number1:Int, number2:Int) in
