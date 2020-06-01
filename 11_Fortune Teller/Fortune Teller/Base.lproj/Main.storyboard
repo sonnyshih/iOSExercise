@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fortune_Teller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OldMan" translatesAutoresizingMaskIntoConstraints="NO" id="wxX-OZ-1bt">
+                                <rect key="frame" x="38" y="0.0" width="692" height="1024"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wxX-OZ-1bt" secondAttribute="height" multiplier="173:256" id="4OQ-oc-t85"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="bqZ-zL-T2Y">
+                                <rect key="frame" x="183" y="562" width="402" height="228"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bqZ-zL-T2Y" secondAttribute="height" multiplier="67:38" id="IQ7-fR-oNn"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASq-1q-Gj7" userLabel="Help View">
+                                <rect key="frame" x="0.0" y="784" width="240" height="240"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="bsG-JO-g8f"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzP-7C-k3H" userLabel="View For Button">
+                                <rect key="frame" x="528" y="939" width="240" height="85"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="TpZ-1f-iNM"/>
+                                    <constraint firstAttribute="width" constant="240" id="fhE-Xf-Yf0"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBv-Gr-MBy">
+                                <rect key="frame" x="193.5" y="845" width="381" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xBv-Gr-MBy" secondAttribute="height" multiplier="381:86" id="rhO-gg-c7v"/>
+                                </constraints>
+                                <state key="normal" image="Button"/>
+                                <state key="highlighted" image="ButtonPressed"/>
+                                <connections>
+                                    <action selector="tellMeSomething:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yg2-bC-LeO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.87450980392156863" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fzP-7C-k3H" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="85:1024" id="1mi-po-5gM"/>
+                            <constraint firstItem="wxX-OZ-1bt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Yk-Tr-TnE"/>
+                            <constraint firstItem="ASq-1q-Gj7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BQT-O3-0jF"/>
+                            <constraint firstItem="ASq-1q-Gj7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="240:1024" id="Ixm-eh-YzQ"/>
+                            <constraint firstItem="bqZ-zL-T2Y" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="228:1024" id="KpE-kh-R9c"/>
+                            <constraint firstItem="fzP-7C-k3H" firstAttribute="top" secondItem="xBv-Gr-MBy" secondAttribute="bottom" constant="8" id="OJT-jD-oQC"/>
+                            <constraint firstItem="ASq-1q-Gj7" firstAttribute="top" secondItem="bqZ-zL-T2Y" secondAttribute="bottom" constant="-6" id="PJ3-TU-WMp"/>
+                            <constraint firstItem="wxX-OZ-1bt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RjQ-Dv-NFc"/>
+                            <constraint firstItem="fzP-7C-k3H" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bPY-NW-SZK"/>
+                            <constraint firstItem="bqZ-zL-T2Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f41-QR-Ea1"/>
+                            <constraint firstItem="wxX-OZ-1bt" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="iu6-UM-zRn"/>
+                            <constraint firstItem="ASq-1q-Gj7" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="l86-Jq-ag1"/>
+                            <constraint firstItem="fzP-7C-k3H" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="pUc-ND-Hnf"/>
+                            <constraint firstItem="xBv-Gr-MBy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zor-0z-aza"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="yourFortune" destination="bqZ-zL-T2Y" id="Wd1-QJ-E9g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="137.6953125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="402" height="227.5"/>
+        <image name="Button" width="380.5" height="85.5"/>
+        <image name="ButtonPressed" width="380.5" height="85.5"/>
+        <image name="OldMan" width="692.5" height="1024"/>
+    </resources>
+</document>
