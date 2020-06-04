@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="efR-hI-tJA">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloSwitchingViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.82037101137125013" green="0.92637437492875874" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="0vJ-4S-djN">
+                        <barButtonItem key="rightBarButtonItem" title="Go to View 2" id="9DA-ST-xvq">
+                            <connections>
+                                <segue destination="t35-2B-Bhw" kind="show" id="fNI-3e-iZO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="85"/>
+        </scene>
+        <!--Light Red-->
+        <scene sceneID="R0x-07-NQp">
+            <objects>
+                <viewController id="t35-2B-Bhw" customClass="LightRedViewController" customModule="HelloSwitchingViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B8o-Pe-tCx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.95349147971414183" green="0.84583730212510333" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="2xJ-Q0-0fy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Light Red" id="H2g-6V-3PA">
+                        <barButtonItem key="rightBarButtonItem" title="Go to View 3" id="IeR-UI-EYo">
+                            <connections>
+                                <segue destination="TRb-fl-l8y" kind="show" id="MUq-3Z-P7h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ca-J9-JUF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234.7826086956522" y="84.782608695652186"/>
+        </scene>
+        <!--Light Green-->
+        <scene sceneID="7BF-sY-zLS">
+            <objects>
+                <viewController id="TRb-fl-l8y" customClass="LightGreenViewController" customModule="HelloSwitchingViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D7p-XW-mvL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.91009018305704947" green="1" blue="0.89190297763966642" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="WG4-9b-zZo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Light Green" id="kU5-ZN-7XX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMC-mS-0Yh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1934.7826086956522" y="84.782608695652186"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8AP-ka-H7R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="efR-hI-tJA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qWp-Ed-gnZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="N1R-Ks-iwA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7k-G3-Xam" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-336.23188405797106" y="86.413043478260875"/>
+        </scene>
+    </scenes>
+</document>
