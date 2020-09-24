@@ -1,3 +1,5 @@
+// Object-Oriented Programming (OOP) 物件導向
+
 class Lego {
     var color:String = "blue"
     var size:Int = 8
@@ -22,7 +24,7 @@ class Baby {
     var name:String
     var age:Int
     
-    init() {
+    init() {    // 物件初始化
         name = "Tome"
         age = 1
         print("A new baby is born!")
@@ -51,10 +53,6 @@ var baby1 = Baby(name: "Hellan")
 baby1.introduceSelf()
 
 
-
-
-
-
 class CuteBaby: Baby {
     var nickName: String = "QQ"
     func danceAndSing() {
@@ -62,7 +60,7 @@ class CuteBaby: Baby {
     }
     
     override func sleep() {
-        super.sleep()
+        super.sleep()   //執行父類別的sleep function
         print("Sleep with cute smile")
     }
     

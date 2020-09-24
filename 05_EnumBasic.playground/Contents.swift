@@ -1,4 +1,5 @@
 // Enum = Enumeration
+import UIKit
 enum Direction {
     case east
     case west

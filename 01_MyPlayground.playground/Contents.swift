@@ -208,7 +208,7 @@ func calculateArea(withWidth width:Float, withHeigh heigh:Float) ->Float{
 print(calculateArea(withWidth: 20.5, withHeigh: 30.5))
 
 
-// Closure 閉包
+// Closure 閉包 (就是沒有名字的function)
 let helloClosure = {
     print("Hello Everybody")
 }
