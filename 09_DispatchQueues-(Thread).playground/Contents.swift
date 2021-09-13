@@ -148,7 +148,7 @@ func concurrentQueuesSyncTest(){
  
     3. 取得API資料後，更新UI 
        Ex:
-        DispatchQueue.global.async {
+        DispatchQueue.global().async {
             // in a background thread
             // get data from internet
             ....
