@@ -1,9 +1,30 @@
 import UIKit
 // 參考: https://www.zerotoappstore.com/get-year-month-day-from-date-swift.html
 
-getDateToString()
+modifiedDate()
+//getDateToString()
 //getYearMonthDayTime()
 //getNowTime()
+
+func modifiedDate(){
+    let today = Date()
+    
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss:SSS"
+    let dateString = dateFormatter.string(from: today)
+    print(dateString)
+    
+//    let modifiedDate = Calendar.current.date(byAdding: .year, value: -2, to: today) // 減2年
+//    let modifiedDate = Calendar.current.date(byAdding: .month, value: -2, to: today) // 減2個月
+//    let modifiedDate = Calendar.current.date(byAdding: .day, value: -2, to: today) // 減2天
+//    let modifiedDate = Calendar.current.date(byAdding: .hour, value: -2, to: today) // 減2小時
+//    let modifiedDate = Calendar.current.date(byAdding: .minute, value: -2, to: today) // 減2分
+    let modifiedDate = Calendar.current.date(byAdding: .second , value: -2, to: today) // 減2秒
+
+    let modifiedDateString = dateFormatter.string(from: modifiedDate!)
+    print(modifiedDateString)
+    
+}
 
 func getDateToString() {
     let date = Date()
